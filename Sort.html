@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorting Algorithm Visualizer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      background: hsl(0, 100%, 90%);
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    #bars {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 5px;
+      width: 80%;
+      max-width: 800px;
+      height: 400px;
+      border: 2px solid #333;
+      background: black;
+    }
+
+    .bar {
+  width: 30px;
+  background: #007bff;
+  border-radius: 3px;
+  transition: height 0.3s, background 0.3s;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  position: relative;
+}
+
+
+    .bar.sorted {
+      background: #28a745; /* Green for sorted bars */
+    }
+
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background: #007bff;
+      color: #fff;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    button:disabled {
+      background: #cccccc;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body> 
+
+  <h1>Sorting Algorithm Visualizer</h1>
+  <div id="bars"></div>
+  <div>
+    
+    <button onclick="generateBars()">Generate New Array</button>
+    <button onclick="bubbleSort()">Bubble Sort</button>
+    <button onclick="selectionSort()">Selection Sort</button>
+    <button onclick="quickSort()">Quick Sort</button>
+    <button onclick="mergeSort()">Merge Sort</button>
+
+    
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
